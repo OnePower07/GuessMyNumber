@@ -6,7 +6,11 @@ GuessMyNumber is a classic guessing game where the player tries to guess a rando
 Features:
 
 Randomly Generated Number: The game generates a random number within a specified range at the start of each round.
+
 User-Friendly Interface: The game features an intuitive and user-friendly interface that makes it easy for players to interact with the game.
+
 Guess Input: Players can input their guess in a text field and submit it to check if they've guessed the correct number.
+
 Feedback: The game provides feedback to the player, indicating whether their guess is too high or too low, helping them narrow down their guesses.
+
 Winning Condition: When the player correctly guesses the number, the game displays a victory message and allows the player to start a new round.
