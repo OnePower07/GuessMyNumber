@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap");
 
 * {
   margin: 0;
@@ -12,13 +12,15 @@ html {
 }
 
 body {
-  font-family: 'Press Start 2P', sans-serif;
-  color: #eee;
-  background-color: #222;
-  /* background-color: #60b347; */
+  font-family: "Press Start 2P", sans-serif;
+  background-image: url("rohit-choudhari-tk2_RBZq7RA-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #e7e311;
 }
 
-/* LAYOUT */
 header {
   position: relative;
   height: 35vh;
@@ -27,7 +29,7 @@ header {
 
 main {
   height: 65vh;
-  color: #eee;
+  color: #eeeeee;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -45,7 +47,6 @@ main {
   font-size: 2rem;
 }
 
-/* ELEMENTS STYLE */
 h1 {
   font-size: 4rem;
   text-align: center;
@@ -58,7 +59,7 @@ h1 {
 
 .number {
   background: #eee;
-  color: #333;
+  color: #264198;
   font-size: 6rem;
   width: 15rem;
   padding: 3rem 0rem;
@@ -84,7 +85,7 @@ h1 {
 
 .guess {
   background: none;
-  border: 4px solid #eee;
+  border: 4px solid #0f7166;
   font-family: inherit;
   color: inherit;
   font-size: 5rem;
@@ -106,7 +107,7 @@ h1 {
 }
 
 .btn:hover {
-  background-color: #ccc;
+  background-color: #21bca2;
 }
 
 .message {
@@ -116,4 +117,36 @@ h1 {
 
 .label-score {
   margin-bottom: 2rem;
+}
+
+/* Animation for Correct Guess */
+.number.correct {
+  animation: correctAnimation 0.5s ease-in-out;
+}
+
+@keyframes correctAnimation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Animation for Incorrect Guess */
+body.incorrect {
+  animation: incorrectAnimation 0.3s linear;
+}
+
+@keyframes incorrectAnimation {
+  0%,
+  100% {
+    background-color: #ff6b6b;
+  }
+  50% {
+    background-color: #e74c3c;
+  }
 }
