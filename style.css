@@ -13,7 +13,6 @@ html {
 
 body {
   font-family: "Press Start 2P", sans-serif;
-  background-image: url("rohit-choudhari-tk2_RBZq7RA-unsplash.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -122,31 +121,4 @@ h1 {
 /* Animation for Correct Guess */
 .number.correct {
   animation: correctAnimation 0.5s ease-in-out;
-}
-
-@keyframes correctAnimation {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.2);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
-/* Animation for Incorrect Guess */
-body.incorrect {
-  animation: incorrectAnimation 0.3s linear;
-}
-
-@keyframes incorrectAnimation {
-  0%,
-  100% {
-    background-color: #ff6b6b;
-  }
-  50% {
-    background-color: #e74c3c;
-  }
 }
